@@ -7,6 +7,8 @@ provider "aws" {
 resource "aws_s3_bucket" "terraform_state" {
   bucket = "chocoholic-terraform-centralized-state" # Unique bucket name
 
+  force_destroy = true
+
   lifecycle {
     # Allow the bucket to be destroyed if needed (set to true to prevent accidental deletion)
     prevent_destroy = false
