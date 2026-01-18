@@ -1,9 +1,0 @@
-# Terraform state files
-./Backend/terraform.tfstate
-./Backend/terraform.tfstate.backup
-
-# Terraform lock file (optional, see below)
-./Backend/.terraform.lock.hcl
-
-# Terraform working directory
-./Backend/.terraform
